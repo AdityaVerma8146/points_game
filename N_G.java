@@ -3,14 +3,14 @@ import java.util.Scanner;
 public class N_G {
     public static void main(String[] args){
         Scanner sc= new Scanner(System.in);
-        int AI_num = (int)(Math.random()*100)+1;
+        int AI_num = (int)(Math.random()*20)+1;
         int U_num=0;
         do{
-            System.out.println("Enter number between 1-100 :");
+            System.out.println("Enter number between 1-20 :");
             U_num=sc.nextInt();
             if(U_num == AI_num){
                 System.out.println("Whoo hoo !! u guessed right number ");
-                break;
+                continue;
             }
             else if(U_num>AI_num){
                 System.out.println("Your number is Greater than AI number");
